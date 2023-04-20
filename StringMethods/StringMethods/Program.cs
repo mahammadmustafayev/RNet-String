@@ -48,7 +48,7 @@
                             Console.WriteLine($"FirstName:{mail.Substring(0, pointIndex)}");
                             Console.WriteLine($"LastName:{mail.Substring(pointIndex)}");
                             Console.WriteLine($"Mail:{mail}");
-                            Console.WriteLine($"Domain:{mail.Split('@')}");
+                            Console.WriteLine($"Domain:{mail.Substring(mail.IndexOf("@")+1)}");
                             Console.WriteLine($"Extension:{mail.Substring(mail.LastIndexOf(".") + 1)}");
                         }
                     }
