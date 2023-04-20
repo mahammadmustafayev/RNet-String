@@ -49,7 +49,7 @@
                             Console.WriteLine($"LastName:{mail.Substring(pointIndex)}");
                             Console.WriteLine($"Mail:{mail}");
                             Console.WriteLine($"Domain:{mail.Split('@')}");
-                            Console.WriteLine($"Extension:{mail.Substring(pointIndex + 1)}");
+                            Console.WriteLine($"Extension:{mail.Substring(mail.LastIndexOf(".") + 1)}");
                         }
                     }
                     
